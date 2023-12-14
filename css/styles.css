@@ -1,0 +1,86 @@
+/* Added transition to the header for a smooth color change */
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Added a hover effect to the header */
+header:hover {
+    background-color: #297fb8;
+}
+
+/* Added a subtle hover effect to navigation links */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    /* Added a subtle underline effect on hover */
+    text-decoration: underline;
+}
+
+/* Added a scale effect on section hover */
+section {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+/* Added a subtle zoom effect to images in the section */
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+section img:hover {
+    transform: scale(1.1);
+}
+
+/* Updated footer styles for better visibility */
+footer {
+    background-color: #297fb8;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Added animation to the header title */
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
